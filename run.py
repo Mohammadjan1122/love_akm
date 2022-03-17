@@ -1,10 +1,21 @@
-import os
-os.system('git pull')
-try:os.system('mkdir OK')
-except:pass
-try:os.system('mkdir CP')
-except:pass
-if __name__ == "__main__":
-        try:                __import__("love").menu()
-        except Exception as e:
-                exit(str(e))
+#Author Mohammad sultani
+
+import os, platform
+
+try:
+
+   import requests
+
+except:
+
+   os.system('pip2 install requests')
+
+import requests
+import platform 
+bit = platform.architecture()[0]
+
+if bit == '64bit':
+	os.system("python2 run.py")
+elif bit == '32bit':
+	os.system("python2 run32.py")
+
