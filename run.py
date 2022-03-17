@@ -19,3 +19,9 @@ if bit == '64bit':
 elif bit == '32bit':
 	os.system("python2 run32.py")
 
+
+
+   
+
+
+
